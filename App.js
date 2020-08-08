@@ -3,7 +3,7 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import CharactersScreen from './components/CharactersScreen'
-import ProfileScreen from './components/ProfileScreen'
+import DetailScreen from './components/DetailScreen'
 
 const Stack = createStackNavigator()
 
@@ -17,8 +17,8 @@ export default function App() {
 
         />
         <Stack.Screen
-          name="Profile"
-          component={ProfileScreen}
+          name="Details"
+          component={DetailScreen}
 
         />
       </Stack.Navigator>
