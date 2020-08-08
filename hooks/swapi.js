@@ -16,9 +16,5 @@ export const useCharacters = () => {
             .then(({ results }) => setChars({ results, loading: false }))
             .catch(error => setChars({ error, loading: false }))
 
-    useEffect(() => {
-        fetchChars()
-    }, [])    
-
-    return { chars }
+    return { chars, fetchChars }
 }
