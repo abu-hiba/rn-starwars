@@ -17,7 +17,7 @@ const CharactersScreen = ({ navigation }) => {
                     data={chars.results}
                     renderItem={({ item }) => (
                         <Text
-                            onPress={() => navigation.navigate('Profile', item)}
+                            onPress={() => navigation.navigate('Details', item)}
                             key={item.name}
                             style={{ padding: 15 }}
                         >{item.name}</Text>
